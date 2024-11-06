@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { projectsData } from "../../content/projects/projectsData";
 import { Navigation } from "../components/nav";
@@ -9,7 +8,7 @@ export const revalidate = 60;
 
 export default function ProjectsPage() {
   // Cuatro proyectos destacados en la cuadrícula de la parte superior
-  const featuredProjects = ["stormcrest-software", "ops-admin", "ngande-gas-and-energy", "master-of-wills"];
+  const featuredProjects = ["stormcrest-software", "powertraining-app", "ngande-gas-and-energy", "master-of-wills"];
   const topProjects = projectsData.filter((project) => featuredProjects.includes(project.slug));
 
   const sorted = projectsData

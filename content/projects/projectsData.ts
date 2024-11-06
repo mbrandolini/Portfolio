@@ -10,6 +10,16 @@ interface Project {
 
 export const projectsData: Project[] = [
   {
+    slug: "powertraining-app",
+    title: "Powertrainig App",
+    description:
+      "Power Training App is a platform designed for personal trainers, allowing them to create and assign customized workout plans, track their clients' progress, and manage training sessions efficiently.",
+    date: "2024-10-10",
+    published: true,
+    image: "/images/PowertrainingApp.jpg",
+    website: "https://powertra.vercel.app", // URL del sitio real
+  },
+  {
     slug: "stormcrest-software",
     title: "Stormcrest Software",
     description:
