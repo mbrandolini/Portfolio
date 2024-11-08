@@ -119,4 +119,34 @@ export const projectsData: Project[] = [
     image: "/images/SamuPortfolio-400x350.jpg",
     website: "https://samuemergencias.com.ar", // URL del sitio real
   },
+  {
+    slug: "fuentes-aquamov",
+    title: "Aquamov Fuentes de Agua Danzante",
+    description:
+      "Somos una empresa dedicada a la construcción y alquiler de fuentes de aguas que danzan al compás de música y luces. Desarrollamos proyectos con software propio, diseñamos todo tipo de trabajos, standard o personalizados.",
+    date: "2022-06-01",
+    published: true,
+    image: "/images/Aquamov.jpg",
+    website: "https://fuenteaguadanzante.com.ar", // URL del sitio real
+  },
+  {
+    slug: "cooperativa-agua",
+    title: "Cooperativa de Agua Villa Allende",
+    description:
+      "Bienvenidos a la Cooperativa de Provisión, Obras y Servicios Públicos de Villa Allende. Más de 42 años acompañando el crecimiento de Villa Allende ",
+    date: "2022-07-01",
+    published: true,
+    image: "/images/Cooperativa.jpg",
+    website: "https://coopva.com.ar", // URL del sitio real
+  },
+  {
+    slug: "accesur-accesorios",
+    title: "Accesur",
+    description:
+      "Accesur tu tienda de accesorios en el sur, desde Lago Pueblo a todo el país. La mejor tienda de accesorios para tus necesidades.",
+    date: "2022-10-01",
+    published: true,
+    image: "/images/Accesur.jpg",
+    website: "https://accesur.com.ar", // URL del sitio real
+  },
 ];
