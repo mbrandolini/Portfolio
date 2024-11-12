@@ -7,6 +7,17 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
+const techLogos = [
+  { name: "WordPress", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" },
+  { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Node", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "Next.js", src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
+  { name: "Photoshop", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" },
+  { name: "Vite", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" },
+  { name: "PHP", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" }
+];
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
@@ -42,6 +53,22 @@ export default function Home() {
           I specialize in creating high-performance websites that enhance
           visibility, user engagement, and overall project impact.
         </h2>
+      </div>
+
+      {/* Logo Section */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mt-16 animate-fade-in">
+        {techLogos.map((logo) => (
+          <div
+            key={logo.name}
+            className="flex justify-center items-center p-4 transition-transform duration-300 transform hover:scale-110 hover:-translate-y-1"
+          >
+            <img
+              src={logo.src}
+              alt={`${logo.name} logo`}
+              className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
