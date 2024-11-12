@@ -55,9 +55,9 @@ export default function Home() {
         </h2>
       </div>
 
-      {/* Logo Section */}
-      <div className="overflow-x-auto w-full mt-16 animate-fade-in">
-        <div className="flex flex-wrap justify-center space-x-8 space-y-4 py-4">
+      {/* Logo Section with subtle background and rounded corners */}
+      <div className="overflow-x-auto w-full mt-16 animate-fade-in bg-zinc-100/50 rounded-lg py-4 px-8">
+        <div className="flex flex-wrap justify-center space-x-8 space-y-4">
           {techLogos.map((logo) => (
             <div
               key={logo.name}
