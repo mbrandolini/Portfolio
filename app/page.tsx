@@ -56,19 +56,21 @@ export default function Home() {
       </div>
 
       {/* Logo Section */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mt-16 animate-fade-in">
-        {techLogos.map((logo) => (
-          <div
-            key={logo.name}
-            className="flex justify-center items-center p-4 transition-transform duration-300 transform hover:scale-110 hover:-translate-y-1"
-          >
-            <img
-              src={logo.src}
-              alt={`${logo.name} logo`}
-              className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300"
-            />
-          </div>
-        ))}
+      <div className="overflow-x-auto w-full mt-16 animate-fade-in">
+        <div className="flex space-x-8 py-4">
+          {techLogos.map((logo) => (
+            <div
+              key={logo.name}
+              className="flex justify-center items-center transition-transform duration-300 transform hover:scale-110 hover:-translate-y-1"
+            >
+              <img
+                src={logo.src}
+                alt={`${logo.name} logo`}
+                className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
