@@ -8,7 +8,7 @@ const navigation = [
 ];
 
 const techLogos = [
-  { name: "WordPress", src: "https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" },
+  { name: "WordPress", src: "https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" },
   { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: "Node", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
   { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
