@@ -57,7 +57,7 @@ export default function Home() {
 
       {/* Logo Section */}
       <div className="overflow-x-auto w-full mt-16 animate-fade-in">
-        <div className="flex space-x-8 py-4">
+        <div className="flex flex-wrap justify-center space-x-8 space-y-4 py-4">
           {techLogos.map((logo) => (
             <div
               key={logo.name}
