@@ -20,31 +20,31 @@ const techLogos = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-16 animate-fade-in">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+      <nav className="my-8 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="px-8 py-3 text-sm font-medium text-black bg-zinc-100 rounded-md shadow-md transition duration-500 hover:bg-zinc-200 hover:bg-opacity-90 hover:text-black"
+              className="px-6 py-2 text-sm font-medium text-black bg-zinc-100 rounded-md shadow-md transition duration-300 hover:bg-zinc-200 hover:bg-opacity-90 hover:text-black"
             >
               {item.name}
             </Link>
           ))}
         </ul>
       </nav>
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className="hidden w-full h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={200}
       />
-      <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text">
+      <h1 className="py-3.5 px-0.5 z-10 text-3xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-5xl md:text-7xl lg:text-9xl whitespace-nowrap bg-clip-text">
         Mariano Brandolini
       </h1>
 
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
+      <div className="hidden w-full h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className="my-8 text-center animate-fade-in px-4">
         <h2 className="text-md text-zinc-500">
           I'm a web developer with over 10 years of experience in software,
           marketing, and design.
@@ -55,9 +55,9 @@ export default function Home() {
         </h2>
       </div>
 
-      {/* Logo Section with subtle background and rounded corners */}
-      <div className="overflow-x-auto w-full mt-16 animate-fade-in bg-zinc-100/30 rounded-lg py-4 px-8">
-        <div className="flex flex-wrap justify-center space-x-8 space-y-4">
+      {/* Logo Section */}
+      <div className="w-full mt-12 animate-fade-in bg-zinc-100/30 rounded-lg py-6 px-4">
+        <div className="flex flex-wrap justify-center gap-6">
           {techLogos.map((logo) => (
             <div
               key={logo.name}
@@ -66,7 +66,7 @@ export default function Home() {
               <img
                 src={logo.src}
                 alt={`${logo.name} logo`}
-                className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300"
+                className="w-16 h-16 md:w-12 md:h-12 lg:w-16 lg:h-16 grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}

@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: "Mariano Brandolini",
     description:
       "This is my portfolio. Here you can find my projects, my skills, and my contact information.",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    url: "https://marianoportfolio.vercel.app/",
+    siteName: "Mariano Portfolio",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://marianoportfolio.vercel.app/og.png",
         width: 1920,
         height: 1080,
       },
