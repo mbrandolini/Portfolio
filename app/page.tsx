@@ -8,14 +8,38 @@ const navigation = [
 ];
 
 const techLogos = [
-  { name: "WordPress", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" },
-  { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Node", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-  { name: "Next.js", src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
-  { name: "Photoshop", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" },
-  { name: "Vite", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" },
-  { name: "PHP", src: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" }
+  {
+    name: "WordPress",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+  },
+  {
+    name: "React",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    name: "Node",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "MySQL",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  {
+    name: "Next.js",
+    src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+  },
+  {
+    name: "Photoshop",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
+  },
+  {
+    name: "Vite",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg",
+  },
+  {
+    name: "PHP",
+    src: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+  },
 ];
 
 export default function Home() {
@@ -39,8 +63,8 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={200}
       />
-      <h1 className="py-3.5 px-0.5 z-10 text-3xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-5xl md:text-7xl lg:text-9xl whitespace-nowrap bg-clip-text">
-        Mariano Brandolini
+      <h1 className="flex items-center gap-3 py-3 px-4 z-10 text-2xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-4xl md:text-6xl bg-clip-text">
+        Mariano Brandolini <span className="text-2xl sm:text-3xl md:text-4xl">💻</span>
       </h1>
 
       <div className="hidden w-full h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
