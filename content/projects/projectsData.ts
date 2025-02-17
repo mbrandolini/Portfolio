@@ -10,6 +10,27 @@ interface Project {
 
 export const projectsData: Project[] = [
   {
+    slug: "civicrm-migration",
+    title: "CiviCRM Migration",
+    description:
+      "Migration from Drupal to WordPress for CiviCRM, configuring full functionality including plugins, payment methods, email handling, and overall system setup.",
+    date: "2024-09-15",
+    published: true,
+    image: "/images/LaiOrg.jpg",
+    website: "https://www.lai.org/", // Reemplaza con la URL real si existe
+  },
+  {
+    slug: "ken-robinson-academy",
+    title: "Ken Robinson Academy Website",
+    description:
+      "Complete redesign and development of the Ken Robinson Academy website from scratch using WordPress, implementing a modern design and improved functionality.",
+    date: "2024-12-01",
+    published: true,
+    image: "/images/KenRobinsonSchool.jpg",
+    website: "https://kenrobinson.edu.ar/", // Reemplaza con la URL real si existe
+  },
+
+  {
     slug: "powertraining-app",
     title: "Powertrainig App",
     description:
@@ -123,17 +144,17 @@ export const projectsData: Project[] = [
     slug: "fuentes-aquamov",
     title: "Aquamov Fuentes de Agua Danzante",
     description:
-      "Somos una empresa dedicada a la construcción y alquiler de fuentes de aguas que danzan al compás de música y luces. Desarrollamos proyectos con software propio, diseñamos todo tipo de trabajos, standard o personalizados.",
+      "We are a company dedicated to the construction and rental of water fountains that dance to the beat of music and lights. We develop projects with our own software, we design all kinds of work, standard or customized.",
     date: "2022-06-01",
     published: true,
     image: "/images/Aquamov.jpg",
-    website: "https://fuenteaguadanzante.com.ar", // URL del sitio real
+    website: "https://fuenteaguadanzante.com", // URL del sitio real
   },
   {
     slug: "cooperativa-agua",
     title: "Cooperativa de Agua Villa Allende",
     description:
-      "Bienvenidos a la Cooperativa de Provisión, Obras y Servicios Públicos de Villa Allende. Más de 42 años acompañando el crecimiento de Villa Allende ",
+      "Welcome to the Villa Allende Public Works and Services Cooperative. More than 42 years accompanying the growth of Villa Allende.",
     date: "2022-07-01",
     published: true,
     image: "/images/Cooperativa.jpg",

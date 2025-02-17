@@ -8,7 +8,7 @@ export const revalidate = 60;
 
 export default function ProjectsPage() {
   // Cuatro proyectos destacados en la cuadrícula de la parte superior
-  const featuredProjects = ["powertraining-app", "ngande-gas-and-energy"];
+  const featuredProjects = ["civicrm-migration", "ngande-gas-and-energy"];
   const topProjects = projectsData.filter((project) => featuredProjects.includes(project.slug));
 
   const sorted = projectsData
